@@ -1,0 +1,244 @@
+.ConTaiNer-Header {
+    width: 100%;
+    background: linear-gradient(
+        179deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.4) 57%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    animation: slideDown 0.3s ease;
+}
+
+
+@keyframes slideDown {
+from {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+/* Navbar */
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 24px;
+}
+
+/* Logo */
+.header-navbar_logo img {
+    height: 70px;
+}
+
+/* Menu chính */
+.header-navbar_menu .list-menu {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.list-menu li {
+    position: relative;
+}
+
+.list-menu li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.list-menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color:#ffd77a;
+
+
+
+    transition: width 0.3s ease;
+}
+
+.list-menu li a:hover::after {
+    width: 100%;
+}
+
+/* Dropdown menu */
+.list-menu_thietkenoithat {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: white;
+    color: #333;
+    border-radius: 6px;
+    min-width: 240px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 8px 0;
+    z-index: 999;
+}
+
+.list-menu li:hover .list-menu_thietkenoithat {
+    display: block;
+}
+
+.list-menu_thietkenoithat li {
+    padding: 10px 16px;
+}
+
+.list-menu_thietkenoithat li a {
+    color: #333;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.list-menu_thietkenoithat li:hover {
+    background-color: #f5f5f5;
+}
+
+.list-menu_thietkenoithat li a:hover {
+    color: #b88e2f;
+}
+
+/* Icon Section */
+.header-navbar_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-navbar_item .item-search,
+.header-navbar_item .item-users,
+.header-navbar_item .item-cart {
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.header-navbar_item .item-search:hover,
+.header-navbar_item .item-users:hover,
+.header-navbar_item .item-cart:hover {
+    color: #b88e2f;
+}
+
+@media (min-width: 768px) and (max-width: 819px) {
+.header-navbar {
+    padding: 12px 16px;
+}
+
+.header-navbar_menu .list-menu {
+    gap: 6px;
+}
+
+.list-menu li a {
+    font-size: 12px;
+    padding: 4px 6px;
+}
+
+.header-navbar_logo img {
+    height: 60px;
+}
+
+.header-navbar_item {
+    gap: 12px;
+}
+
+.header-navbar_item .item-search,
+.header-navbar_item .item-users,
+.header-navbar_item .item-cart {
+    font-size: 16px;
+}
+}
+@media (min-width: 820px) and (max-width: 1023px) {
+.header-navbar {
+    padding: 14px 20px;
+}
+
+.header-navbar_menu .list-menu {
+    gap: 8px;
+}
+
+.list-menu li a {
+    font-size: 13px;
+    padding: 4px 6px;
+}
+
+.header-navbar_logo img {
+    height: 65px;
+}
+
+.header-navbar_item {
+    gap: 14px;
+}
+
+.header-navbar_item .item-search,
+.header-navbar_item .item-users,
+.header-navbar_item .item-cart {
+    font-size: 18px;
+}
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+.header-navbar {
+    padding: 10px 16px;
+}
+
+.header-navbar_logo img {
+    height: 60px;
+}
+
+.header-navbar_menu .list-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.list-menu li a {
+    font-size: 16px;
+    padding: 6px;
+}
+
+.list-menu_thietkenoithat {
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    font-size: 14px;
+}
+
+.list-menu_thietkenoithat li {
+    padding: 8px 16px;
+}
+
+.header-navbar_item {
+    gap: 12px;
+}
+
+.header-navbar_item .item-search,
+.header-navbar_item .item-users,
+.header-navbar_item .item-cart {
+    font-size: 18px;
+}
+}
