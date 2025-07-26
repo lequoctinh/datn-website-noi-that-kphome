@@ -26,17 +26,17 @@ return (
                         Thiết kế nội thất <FontAwesomeIcon icon={faAngleDown} />
                     </Link>
                     <ul className="list-menu_thietkenoithat absolute hidden group-hover:block">
-                        <li><Link to="/thiet-ke-noi-that-chung-cu">Chung cư</Link></li>
-                        <li><Link to="/thiet-ke-noi-that-nha-pho">Nhà phố</Link></li>
-                        <li><Link to="/thiet-ke-noi-that-biet-thu">Biệt thự</Link></li>
-                        <li><Link to="/thiet-ke-noi-that-van-phong">Văn phòng</Link></li>
-                        <li><Link to="/thiet-ket-noi-that-phong-khach">Phòng khách</Link></li>
-                        <li><Link to="/thiet-ket-noi-that-phong-ngu">Phòng ngủ</Link></li>
-                        <li><Link to="/thiet-ket-noi-that-phong-bep">Phòng bếp</Link></li>
-                        <li><Link to="/thiet-ket-noi-that-tu-bep">Tủ bếp</Link></li>
+                        <li><Link to="/thiet-ke-noi-that-chung-cu">Thiết kế nội thất chung cư</Link></li>
+                        <li><Link to="/thiet-ke-noi-that-nha-pho">Thiết kế nội thất nhà phố</Link></li>
+                        <li><Link to="/thiet-ke-noi-that-biet-thu">Thiết kế nội thất biệt thự</Link></li>
+                        <li><Link to="/thiet-ke-noi-that-van-phong">Thiết kế nội thất văn phòng</Link></li>
+                        <li><Link to="/thiet-ket-noi-that-phong-khach">Thiết kế nội thất phòng khách</Link></li>
+                        <li><Link to="/thiet-ket-noi-that-phong-ngu">Thiết kế nội thất phòng ngủ</Link></li>
+                        <li><Link to="/thiet-ket-noi-that-phong-bep">Thiết kế nội thất phòng bếp</Link></li>
+                        <li><Link to="/thiet-ket-noi-that-tu-bep">Thiết kế nội thất tủ bếp</Link></li>
                     </ul>
                     </li>
-                    <li><Link to="/du-an">Dự án thực tế</Link></li>
+                    <li><Link to="/du-an-thuc-te">Dự án thực tế</Link></li>
                     <li><Link to="/lien-he">Liên hệ</Link></li>
                 </ul>
             </div>
