@@ -18,7 +18,7 @@
     background: rgba(0, 0, 0, 0.6);
     color: white;
     opacity: 0;
-    transform: translateY(30px); /* Bắt đầu lệch xuống */
+    transform: translateY(30px); 
     transition: opacity 0.4s ease, transform 0.4s ease;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
 
 .ServiceCard:hover .ServiceCard-overlay {
     opacity: 1;
-    transform: translateY(0); /* Trượt lên khi hover */
+    transform: translateY(0); 
 }
 
 .ServiceCard-title {
