@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-faBars,
-faXmark,
-faUser,
-faShoppingCart,
-faMagnifyingGlass,
-faAngleDown,
+    faBars,
+    faXmark,
+    faUser, 
+    faShoppingCart,
+    faMagnifyingGlass,
+    faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
+
 import { Link } from "react-router-dom";
 import './css/HeaderMobile.css';
 
