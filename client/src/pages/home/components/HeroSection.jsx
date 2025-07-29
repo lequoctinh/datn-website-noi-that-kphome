@@ -7,17 +7,18 @@ import "./css/HeroSection.css";
 
 function HeroSection() {
 const bannerImages = [
-    "/BannerHome/bannerhome1.jpeg",
-    "/BannerHome/bannerhome2.jpeg",
-    "/BannerHome/bannerhome3.jpeg",
-    "/BannerHome/bannerhome4.jpeg",
-    "/BannerHome/bannerhome5.jpg",
+    "/BannerHome/LA_0001.JPG",
+    "/BannerHome/LA_0002.JPG",
+    "/BannerHome/LA_0003.JPG",
+    "/BannerHome/LA_0004.JPG",
+    "/BannerHome/LA_0005.JPG",
+    "/BannerHome/LA_0006.JPG",
 ];
 
 return (
     <div className="Container-HeroSection">
         <div className="HeroSection-banner_background">
-            <img src="/background-banner/background-banner.jpeg" alt="" />
+            <img src="/background-banner/background-banner.jpg" alt="" />
         </div>
         <div className="HeroSection-banner_slider">
             <Swiper
@@ -35,8 +36,8 @@ return (
             </Swiper>
         </div>
         <div className="HeroSection-banner_content">
-            <h2>NHÀ LÀ KHỞI NGUỒN CỦA MỌI ĐIỀU HẠNH PHÚC</h2>
-            <p>Để mỗi ngày được sống đúng và đầy đủ trong tâm hồn. Vì chúng tôi hiểu rõ, mục đích cuối cùng cho những cố gắng để giúp bản thân hạnh phúc hơn!</p>
+            <h2>AN TOÀN MỖI NGÀY - KHỞI ĐẦU HẠNH PHÚC CÙNG HYUNDAI SMART HOME</h2>
+            <p>Hãy để ngôi nhà của bạn trở thành nơi đáng sống nhất – với những giải pháp thông minh và tinh tế từ Hyundai!</p>
             <input type="text"  placeholder="Số điện thoại"/>
             <button className="submit-advise">Đăng kí tư vấn</button>
         </div>
