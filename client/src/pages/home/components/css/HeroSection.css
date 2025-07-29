@@ -7,7 +7,6 @@ color: white;
 overflow: hidden;
 }
 
-/* Nền background nằm dưới slider + content */
 .HeroSection-banner_background {
 position: absolute;
 inset: 0;
@@ -21,7 +20,6 @@ object-fit: cover;
 display: block;
 }
 
-/* Wrapper chia 2 cột */
 .HeroSection-banner_slider,
 .HeroSection-banner_content {
 width: 50%;
@@ -43,7 +41,6 @@ display: block;
 border-radius: 8px;
 }
 
-/* Flex layout */
 .Container-HeroSection {
 display: flex;
 justify-content: space-between;
@@ -52,56 +49,53 @@ padding: 0 60px;
 box-sizing: border-box;
 }
 
-/* Content bên phải */
 .HeroSection-banner_content {
- width: 50%;
-  padding-left: 30px;
-  color: white;
-  z-index: 2;
-  position: relative;
+    width: 50%;
+    padding-left: 30px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
 
-  /* Gradient background + blur */
-  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-
-  padding: 30px;
+    padding: 30px;
 }
 
 .HeroSection-banner_content h2 {
-font-size: 32px;
-font-weight: bold;
-line-height: 1.3;
-margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 16px;
 }
 
 .HeroSection-banner_content p {
-font-size: 16px;
-line-height: 1.6;
-margin-bottom: 20px;
-max-width: 90%;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 90%;
 }
 
 .HeroSection-banner_content input {
-padding: 10px 14px;
-border-radius: 6px;
-border: none;
-width: 60%;
-font-size: 14px;
-color: black;
-margin-right: 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    width: 60%;
+    font-size: 14px;
+    color: black;
+    margin-right: 10px;
 }
 
 .submit-advise {
-padding: 10px 16px;
-border: none;
-background-color: #f59e0b;
-color: white;
-font-weight: bold;
-border-radius: 6px;
-cursor: pointer;
-transition: background-color 0.3s ease;
+    padding: 10px 16px;
+    border: none;
+    background-color: #f59e0b;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .submit-advise:hover {

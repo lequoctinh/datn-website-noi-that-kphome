@@ -64,7 +64,7 @@ return (
             </div>
             <div className="over-Footer_social-links flex flex-col items-center gap-4">
                 <div className="logo-Footer">
-                    <img src="/KPSHOP.png" alt="Logo footer" className="h-14" />
+                    <img src="/Hyundai.png" alt="Logo footer" className="h-14" />
                 </div>
                 <div className="social-links_item flex gap-4 text-xl">
                     <div className="item-Facebook text-[#3b5998]">
