@@ -3,7 +3,7 @@ width: 100%;
 background: linear-gradient(
     179deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.4) 57%,
+    rgba(0, 0, 0, 0.4) 80%,
     rgba(0, 0, 0, 0) 100%
 );
 color: white;
@@ -23,7 +23,7 @@ padding: 12px 16px;
 }
 
 .headerMobile-navbar_logo img {
-height: 48px;
+height: 30px;
 }
 
 .headerMobile-navbar_menuIcon {

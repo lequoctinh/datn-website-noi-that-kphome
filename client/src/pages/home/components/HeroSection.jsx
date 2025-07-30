@@ -9,10 +9,9 @@ function HeroSection() {
 const bannerImages = [
     "/BannerHome/LA_0001.JPG",
     "/BannerHome/LA_0002.JPG",
-    "/BannerHome/LA_0003.JPG",
-    "/BannerHome/LA_0004.JPG",
-    "/BannerHome/LA_0005.JPG",
-    "/BannerHome/LA_0006.JPG",
+    "/BannerHome/LA_0003.jpg",
+    "/BannerHome/LA_0004.jpg",
+    "/BannerHome/LA_0005.jpg",
 ];
 
 return (
