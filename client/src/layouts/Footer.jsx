@@ -103,7 +103,7 @@ return (
         </div>
         <div className="footer-copyright text-center py-4">
             <p className="text-sm text-gray-400">
-            © 2025 - Bản quyền thuộc về khaiphathome.com
+            © 2025 - Bản quyền thuộc về securesmarthome.com
             </p>
         </div>
     </div>
