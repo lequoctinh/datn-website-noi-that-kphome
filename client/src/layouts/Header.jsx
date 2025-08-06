@@ -20,7 +20,7 @@ return (
         {isTablet ? (
         <div className="header-navbar_top flex justify-between items-center mb-2">
             <div className="header-navbar_logo">
-            <img src="/Hyundai.png" alt="Logo" className="h-14" />
+            <img src="/SecureHome.png" alt="Logo" className="h-14" />
             </div>
             <div className="header-navbar_item flex items-center gap-4 text-lg">
             <div className="item-search"><FontAwesomeIcon icon={faMagnifyingGlass} /></div>
@@ -31,7 +31,7 @@ return (
         ) : (
         <>
             <div className="header-navbar_logo">
-            <img src="/Hyundai.png" alt="Logo" className="h-14" />
+            <img src="/SecureHome.png" alt="Logo" className="h-14" />
             </div>
             <div className="header-navbar_menu">
             <ul className="list-menu flex space-x-6 items-center text-[15px] font-medium">
@@ -62,7 +62,7 @@ const renderMenu = () => (
         <li><Link to="/ve-chung-toi">Về chúng tôi</Link></li>
         <li className="relative group">
             <Link to="#">Khóa cửa thông minh <FontAwesomeIcon icon={faAngleDown} /></Link>
-        <ul className="list-menu_thietkenoithat absolute hidden group-hover:block">
+        <ul className="list-menu_secure absolute hidden group-hover:block">
             <li><Link to="/khoa-cua-nhom">Khóa cửa nhôm</Link></li>
             <li><Link to="/khoa-cua-go">Khóa cửa gỗ</Link></li>
             <li><Link to="/khoa-cua-cong">Khóa cửa cổng</Link></li>
@@ -73,7 +73,7 @@ const renderMenu = () => (
         </li>
         <li className="relative group">
             <Link to="#">Cửa nhựa Composite <FontAwesomeIcon icon={faAngleDown} /></Link>
-        <ul className="list-menu_thietkenoithat absolute hidden group-hover:block">
+        <ul className="list-menu_secure absolute hidden group-hover:block">
             <li><Link to="/cua-phang">Cửa phẳng</Link></li>
             <li><Link to="/cua-nep-kim-loai">Cửa nẹp kim loại</Link></li>
             <li><Link to="/cua-o-kinh">Cửa ô kính</Link></li>

@@ -39,7 +39,7 @@ to {
 
 /* Logo */
 .header-navbar_logo img {
-    height: 40px;
+    height:50px;
 }
 
 /* Menu chính */
@@ -87,7 +87,7 @@ to {
 }
 
 /* Dropdown menu */
-.list-menu_thietkenoithat {
+.list-menu_secure {
     display: none;
     position: absolute;
     top: 110%;
@@ -101,25 +101,25 @@ to {
     z-index: 999;
 }
 
-.list-menu li:hover .list-menu_thietkenoithat {
+.list-menu li:hover .list-menu_secure {
     display: block;
 }
 
-.list-menu_thietkenoithat li {
+.list-menu_secure li {
     padding: 10px 16px;
 }
 
-.list-menu_thietkenoithat li a {
+.list-menu_secure li a {
     color: #333;
     font-weight: 400;
     transition: all 0.2s ease;
 }
 
-.list-menu_thietkenoithat li:hover {
+.list-menu_secure li:hover {
     background-color: #f5f5f5;
 }
 
-.list-menu_thietkenoithat li a:hover {
+.list-menu_secure li a:hover {
     color: #b88e2f;
 }
 
@@ -161,7 +161,7 @@ to {
 }
 
 .header-navbar_logo img {
-    height: 36px;
+    height: 50px;
 }
 
 .header-navbar_item {
@@ -218,7 +218,7 @@ to {
 }
 
 .header-navbar_logo img {
-    height: 36px;
+    height: 50px;
 }
 
 .header-navbar_item {
