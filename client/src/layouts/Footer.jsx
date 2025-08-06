@@ -19,12 +19,12 @@ return (
         <div className="overall-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-10">
             <div className="overall-content_company space-y-3">
                 <h2 className="content-company_title-company text-lg font-semibold">
-                    CÔNG TY TNHH NỘI THẤT KHẢI PHÁT HOME
+                    SECURE SMART HOME – AN TOÀN & ĐẲNG CẤP CHUẨN HÀN
                 </h2>
                 <div className="content-company space-y-2 text-sm">
                     <div className="content-company_itemEmail flex items-center gap-2">
                         <FontAwesomeIcon icon={faEnvelope} />
-                        <span>khaiphathome@gmail.com</span>
+                        <span>securesmarthome@gmail.com</span>
                     </div>
                     <div className="content-company_itemPhone flex items-center gap-2">
                         <FontAwesomeIcon icon={faPhone} />
@@ -44,27 +44,38 @@ return (
                 <p className="categories-title text-lg font-semibold mb-2">Danh mục chúng tôi</p>
                 <ul className="list-category space-y-1 text-sm">
                     <li><Link to='/ve-chung-toi'>Về chúng tôi</Link></li>
-                    <li><Link to='/san-pham-noi-that'>Sản phẩm nội thất</Link></li>
                     <li><Link to='/du-an-thuc-te'>Dự án thực tế</Link></li>
+                    <li><Link to='/tin-tuc'>Tin tức</Link></li>
                     <li><Link to='/lien-he'>Liên hệ với chúng tôi</Link></li>
                 </ul>
             </div>
-            <div className="overall-Footer_service">
-                <p className="service-title text-lg font-semibold mb-2">Dịch vụ nội thất</p>
-                <ul className="list-service space-y-1 text-sm">
-                    <li><Link to="/thiet-ke-noi-that-chung-cu">Thiết kế nội thất chung cư</Link></li>
-                    <li><Link to="/thiet-ke-noi-that-nha-pho">Thiết kế nội thất nhà phố</Link></li>
-                    <li><Link to="/thiet-ke-noi-that-biet-thu">Thiết kế nội thất biệt thự</Link></li>
-                    <li><Link to="/thiet-ke-noi-that-van-phong">Thiết kế nội thất văn phòng</Link></li>
-                    <li><Link to="/thiet-ket-noi-that-phong-khach">Phòng khách</Link></li>
-                    <li><Link to="/thiet-ket-noi-that-phong-ngu">Phòng ngủ</Link></li>
-                    <li><Link to="/thiet-ket-noi-that-phong-bep">Phòng bếp</Link></li>
-                    <li><Link to="/thiet-ket-noi-that-tu-bep">Tủ bếp</Link></li>
-                </ul>
+            <div className="overall-Footer_service grid grid-cols-2 gap-4">
+                <div>
+                    <p className="service-title text-lg font-semibold mb-2">Khóa cửa thông minh</p>
+                    <ul className="list-service space-y-1 text-sm">
+                    <li><Link to="/khoa-cua-nhom">Khóa cửa nhôm</Link></li>
+                    <li><Link to="/khoa-cua-go">Khóa cửa gỗ</Link></li>
+                    <li><Link to="/khoa-cua-cong">Khóa cửa cổng</Link></li>
+                    <li><Link to="/khoa-khach-san">Khóa khách sạn</Link></li>
+                    <li><Link to="/khoa-dai-sanh">Khóa đại sảnh</Link></li>
+                    <li><Link to="/khoa-face-id">Khóa Face ID</Link></li>
+                    </ul>
+                </div>
+                <div>
+                    <p className="service-title text-lg font-semibold mb-2">Cửa nhựa Composite</p>
+                    <ul className="list-service space-y-1 text-sm">
+                    <li><Link to="/cua-phang">Cửa phẳng</Link></li>
+                    <li><Link to="/cua-nep-kim-loai">Cửa nẹp kim loại</Link></li>
+                    <li><Link to="/cua-o-kinh">Cửa ô kính</Link></li>
+                    <li><Link to="/cua-chi-noi">Cửa chỉ nổi</Link></li>
+                    <li><Link to="/cua-hut-huynh">Cửa hút huỳnh</Link></li>
+                    <li><Link to="/cua-vom">Cửa vòm</Link></li>
+                    </ul>
+                </div>
             </div>
             <div className="over-Footer_social-links flex flex-col items-center gap-4">
                 <div className="logo-Footer">
-                    <img src="/Hyundai.png" alt="Logo footer" className="h-14" />
+                    <img src="/SecureHome.png" alt="Logo footer" className="h-14" />
                 </div>
                 <div className="social-links_item flex gap-4 text-xl">
                     <div className="item-Facebook text-[#3b5998]">

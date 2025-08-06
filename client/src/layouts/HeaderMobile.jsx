@@ -27,7 +27,7 @@ return (
     <div className="headerMobile-navbar flex justify-between items-center px-4 py-3">
         <div className="headerMobile-navbar_logo">
         <Link to="/">
-            <img src="/Hyundai.png" alt="logo" className="h-12" />
+            <img src="/SecureHome.png" alt="logo" className="h-12" />
         </Link>
         </div>
         <div className="headerMobile-navbar_menuIcon text-2xl cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
