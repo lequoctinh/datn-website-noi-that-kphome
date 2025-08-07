@@ -68,12 +68,12 @@ return (
                         </div>
                         {openDropdown1 && (
                             <ul className="dropdown-submenu mt-2 pl-3 space-y-1">
-                            <li><Link to="/khoa-cua-nhom">Khóa cửa nhôm</Link></li>
-                            <li><Link to="/khoa-cua-go">Khóa cửa gỗ</Link></li>
-                            <li><Link to="/khoa-cua-cong">Khóa cửa cổng</Link></li>
-                            <li><Link to="/khoa-khach-san">Khóa khách sạn</Link></li>
-                            <li><Link to="/khoa-dai-sanh">Khóa đại sảnh</Link></li>
-                            <li><Link to="/khoa-face-id">Khóa Face ID</Link></li>
+                            <li><Link to="/khoa-van-tay-bosh">Khóa vân tay BOSH</Link></li>
+                            <li><Link to="/khoa-cua-huyndai">Khóa cửa HUYNDAI</Link></li>
+                            <li><Link to="/khoa-cua-hafele">Khóa cửa HAFELE</Link></li>
+                            <li><Link to="/khoa-cua-hubert">Khóa cửa HUBERT</Link></li>
+                            <li><Link to="/khoa-cua-ezviz">Khóa cửa EZVIZ</Link></li>
+                            <li><Link to="/khoa-cua-kassler">Khóa cửa KASSLER</Link></li>
                             </ul>
                         )}
                     </li>
