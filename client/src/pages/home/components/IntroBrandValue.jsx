@@ -28,7 +28,7 @@ return (
                 cửa nhựa an toàn, giúp bạn kiểm soát ngôi nhà dễ dàng, bảo vệ người thân, 
                 và tận hưởng trọn vẹn từng phút giây bên gia đình.
             </p>
-            <p>Chúng tôi hiểu rằng, công nghệ chỉ có ý nghĩa khi phục vụ cho hạnh phúc con người. Đó là lý do mỗi sản phẩm  <strong className="highlight">SECURE SMART HOME </strong> đều được phát triển để trở thành người bạn đồng hành
+            <p className="text-paragraph">Chúng tôi hiểu rằng, công nghệ chỉ có ý nghĩa khi phục vụ cho hạnh phúc con người. Đó là lý do mỗi sản phẩm  <strong className="highlight">SECURE SMART HOME </strong> đều được phát triển để trở thành người bạn đồng hành
                 tin cậy trong tổ ấm của bạn – hôm nay và cả mai sau.</p>
             </div>
             <div className="IntroBrandValue-content_image w-full" data-aos="zoom-in">

@@ -1,0 +1,79 @@
+.Container-TopSellingProducts {
+    border: 1.5px solid rgba(255, 215, 122, 0.25);
+    border-radius: 18px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+}
+
+
+.TopSellingProducts-Content_Title h2 {
+    color: #ffd77a;           
+    letter-spacing: 0.5px;
+}
+
+.TSP-card {
+    border-radius: 16px;                         
+    background: rgba(255, 255, 255, 0.06);       
+    border: 1.5px solid rgba(255, 215, 122, 0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);   
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    min-height: 80px;                            
+}
+
+.TSP-link {
+    padding: 16px 18px;
+    width: 100%;
+}
+
+.TSP-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 215, 122, 0.12);
+    border: 1px solid rgba(255, 215, 122, 0.35);
+}
+
+.TSP-title {
+    color: #ffd77a;      
+    line-height: 1.1;
+}
+
+.TSP-subtitle {
+    color: #d3d3d3;      
+}
+
+.TSP-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    border-color: #ffd77a;
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.TSP-card:hover .TSP-title,
+.TSP-card:hover .TSP-subtitle {
+    color: #ffffff;
+}
+
+.TSP-card.is-emphasis {
+    background: linear-gradient(180deg, #ffd77a 0%, #f8c64f 100%);
+    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 20px rgba(255, 215, 122, 0.35);
+}
+
+.TSP-card.is-emphasis .TSP-title {
+    color: #2b1b00;    
+}
+
+.TSP-card.is-emphasis .TSP-subtitle {
+    color: #3a2a08;
+}
+
+.TSP-card.is-emphasis .TSP-icon {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.TSP-card.is-emphasis:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.03);
+}

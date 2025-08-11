@@ -1,0 +1,68 @@
+
+
+.ProductCatalog-Content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffd77a; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ProductCatalog-banner {
+    background-color: rgba(255, 215, 122, 0.05);
+    border: 2px solid rgba(255, 215, 122, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductCatalog-banner img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0.95);
+    transition: all 0.3s ease;
+}
+
+.ProductCatalog-banner:hover {
+    border-color: #ffd77a;
+    background-color: rgba(255, 215, 122, 0.08);
+    transform: translateY(-4px);
+}
+
+.ProductCatalog-banner:hover img {
+    filter: brightness(1.1);
+}
+.ProductCatalog-banner {
+    background-color: rgba(255, 215, 122, 0.05);
+    border: 2px solid rgba(255, 215, 122, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: center;    
+}
+.ProductCatalog-banner p {
+    margin-top: 8px;             
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffd77a;             
+    text-align: center;
+    text-transform: capitalize;  
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover: chữ sáng hơn */
+.ProductCatalog-banner:hover p {
+    color: #ffffff; 
+}
