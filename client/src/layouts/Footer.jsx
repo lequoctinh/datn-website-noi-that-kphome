@@ -8,7 +8,7 @@ faMapLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import {
 faFacebookF,
-faInstagram,
+faYoutube,
 faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import './css/Footer.css';
@@ -45,52 +45,25 @@ return (
                 <ul className="list-category space-y-1 text-sm">
                     <li><Link to='/ve-chung-toi'>Về chúng tôi</Link></li>
                     <li><Link to='/du-an-thuc-te'>Dự án thực tế</Link></li>
+                    <li><Link to='/huong-dan-su-dung'>Hướng dẫn sử dụng</Link></li>
                     <li><Link to='/tin-tuc'>Tin tức</Link></li>
                     <li><Link to='/lien-he'>Liên hệ với chúng tôi</Link></li>
                 </ul>
             </div>
-            <div className="overall-Footer_service grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-                <p className="service-title text-lg font-semibold mb-2">Khóa cửa thông minh</p>
-                <ul className="list-service space-y-1 text-sm">
-                <li><Link to="/khoa-van-tay-bosh">Khóa vân tay BOSH</Link></li>
-                <li><Link to="/khoa-cua-huyndai">Khóa cửa HUYNDAI</Link></li>
-                <li><Link to="/khoa-cua-hafele">Khóa cửa HAFELE</Link></li>
-                <li><Link to="/khoa-cua-hubert">Khóa cửa HUBERT</Link></li>
-                <li><Link to="/khoa-cua-ezviz">Khóa cửa EZVIZ</Link></li>
-                <li><Link to="/khoa-cua-kassler">Khóa cửa KASSLER</Link></li>
-                </ul>
-            </div>
-            <div>
-                <p className="service-title text-lg font-semibold mb-2">Cửa nhựa Composite</p>
-                <ul className="list-service space-y-1 text-sm">
-                <li><Link to="/cua-phang">Cửa phẳng</Link></li>
-                <li><Link to="/cua-nep-kim-loai">Cửa nẹp kim loại</Link></li>
-                <li><Link to="/cua-o-kinh">Cửa ô kính</Link></li>
-                <li><Link to="/cua-chi-noi">Cửa chỉ nổi</Link></li>
-                <li><Link to="/cua-hut-huynh">Cửa hút huỳnh</Link></li>
-                <li><Link to="/cua-vom">Cửa vòm</Link></li>
-                </ul>
-            </div>
-            <div>
-                <p className="service-title text-lg font-semibold mb-2">Camera giám sát</p>
-                <ul className="list-service space-y-1 text-sm">
-                    <li><Link to="/camera-wifi-imou">Camera Wifi Imou</Link></li>
-                    <li><Link to="/camera-wifi-ezviz">Camera Wifi Ezviz</Link></li>
-                    <li><Link to="/camera-dahua">Camera Dahua</Link></li>
-                    <li><Link to="/camera-hikvision">Camera Hikvision</Link></li>
-                    <li><Link to="/camera-tapo-tp-link">Camera Tapo-TP-Link</Link></li>
-                    <li><Link to="/camera-hanh-trinh">Camera hành trình</Link></li>
-                </ul>
-            </div>
-            <div>
-                <p className="service-title text-lg font-semibold mb-2">Phụ kiện</p>
-                <ul className="list-service space-y-1 text-sm">
-                <li><Link to="/phu-kien-khoa-van-tay">Phụ kiện khóa vân tay</Link></li>
-                <li><Link to="/phu-kien-camera">Phụ kiện camera</Link></li>
-                </ul>
-            </div>
-            </div>
+            <div className="overall-Footer_policy grid grid-cols-1 gap-4">
+    <div>
+        <p className="policy-title text-lg font-semibold mb-2">Chính sách</p>
+        <ul className="list-policy space-y-1 text-sm">
+            <li><Link to="/chinh-sach-bao-mat">Chính sách bảo mật</Link></li>
+            <li><Link to="/chinh-sach-bao-hanh">Chính sách bảo hành</Link></li>
+            <li><Link to="/chinh-sach-giao-hang">Chính sách giao hàng</Link></li>
+            <li><Link to="/chinh-sach-doi-tra-hang">Chính sách đổi trả hàng</Link></li>
+            <li><Link to="/huong-dan-mua-hang">Hướng dẫn mua hàng</Link></li>
+            <li><Link to="/hinh-thuc-thanh-toan">Hình thức thanh toán</Link></li>
+        </ul>
+    </div>
+</div>
+
 
             <div className="over-Footer_social-links flex flex-col items-center gap-4">
                 <div className="logo-Footer">
@@ -107,9 +80,9 @@ return (
                         <FontAwesomeIcon icon={faTiktok} />
                     </a>
                     </div>
-                    <div className="item-Ins text-[#e1306c]">
-                    <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faInstagram} />
+                    <div className="item-YouTube text-[#ff0000]">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faYoutube} />
                     </a>
                     </div>
                     <div className="item-Email text-[#b88e2f]">

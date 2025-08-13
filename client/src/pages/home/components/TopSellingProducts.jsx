@@ -2,64 +2,70 @@ import React from "react";
 import "./css/TopsellingProducts.css";
 import { Link } from "react-router-dom";
 
+const items = [
+{
+    to: "/khuyen-mai",
+    title: "Sản phẩm giá sốc",
+    subtitle: "Giá luôn rẻ nhất",
+    icon: "/collection/flame.png",
+    emphasis: true,
+},
+{
+    to: "/camera",
+    title: "Camera ưu đãi",
+    subtitle: "Chuẩn hàng chính hãng",
+    icon: "/collection/cctv.png",
+},
+{
+    to: "/khoa-thong-minh",
+    title: "Khóa vân tay giảm sốc",
+    subtitle: "TOP 1 bán chạy 2025",
+    icon: "/collection/knob.png",
+},
+{
+    to: "/cua-nhua-composite",
+    title: "Cửa nẹp kim loại",
+    subtitle: "Bền - đẹp - chống nước",
+    icon: "/collection/open-door.png",
+},
+];
+
 function TopSellingProducts() {
 return (
-    <div className="Container-TopSellingProducts px-4 py-8">
+        <section className="Container-TopSellingProducts px-4 py-8">
         <div className="TopSellingProducts-Content max-w-6xl mx-auto">
             <div className="TopSellingProducts-Content_Title text-center mb-6">
                 <h2 className="text-2xl sm:text-3xl font-bold uppercase">
                     Top sản phẩm bán chạy
                 </h2>
             </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="TSP-card is-emphasis">
-                    <Link to="/khuyen-mai" className="TSP-link flex items-center gap-3">
-                    <div className="TSP-icon flex items-center justify-center rounded-full">
-                        <img src="/collection/flame.png" alt="Giá sốc" className="w-7 h-7 object-contain" />
+                {items.map((it, i) => (
+                    <div className={`TSP-card ${it.emphasis ? "is-emphasis" : ""}`} key={i}>
+                        <Link to={it.to} className="TSP-link flex items-center gap-3" aria-label={it.title}>
+                            <div className="TSP-icon flex items-center justify-center rounded-full">
+                                <img src={it.icon} alt="" className="w-7 h-7 object-contain" loading="lazy" />
+                            </div>
+                            <div className="TSP-text flex-1">
+                                <div className="TSP-title font-semibold">{it.title}</div>
+                                <div className="TSP-subtitle text-sm">{it.subtitle}</div>
+                            </div>
+                        </Link>
                     </div>
-                    <div className="TSP-text flex-1">
-                        <div className="TSP-title font-semibold">Sản phẩm giá sốc</div>
-                        <div className="TSP-subtitle text-sm">Giá luôn rẻ nhất</div>
-                    </div>
-                    </Link>
-                </div>
-                <div className="TSP-card">
-                    <Link to="/camera" className="TSP-link flex items-center gap-3">
-                    <div className="TSP-icon flex items-center justify-center rounded-full">
-                        <img src="/collection/cctv.png" alt="Camera ưu đãi" className="w-7 h-7 object-contain" />
-                    </div>
-                    <div className="TSP-text flex-1">
-                        <div className="TSP-title font-semibold">Camera ưu đãi</div>
-                        <div className="TSP-subtitle text-sm">Chuẩn hàng chính hãng</div>
-                    </div>
-                    </Link>
-                </div>
-                <div className="TSP-card">
-                    <Link to="/khoa-thong-minh" className="TSP-link flex items-center gap-3">
-                    <div className="TSP-icon flex items-center justify-center rounded-full">
-                        <img src="/collection/knob.png" alt="Khóa vân tay" className="w-7 h-7 object-contain" />
-                    </div>
-                    <div className="TSP-text flex-1">
-                        <div className="TSP-title font-semibold">Khóa vân tay giảm sốc</div>
-                        <div className="TSP-subtitle text-sm">TOP 1 bán chạy 2025</div>
-                    </div>
-                    </Link>
-                </div>
-                <div className="TSP-card">
-                    <Link to="/cua-nhua-composite" className="TSP-link flex items-center gap-3">
-                    <div className="TSP-icon flex items-center justify-center rounded-full">
-                        <img src="/collection/open-door.png" alt="cửa nhựa composite" className="w-7 h-7 object-contain" />
-                    </div>
-                    <div className="TSP-text flex-1">
-                        <div className="TSP-title font-semibold">Cửa nẹp kim loại</div>
-                        <div className="TSP-subtitle text-sm">Bền - đẹp - chống nước</div>
-                    </div>
-                    </Link>
-                </div>
+                ))}
+            </div>
+            <div className="text-center mt-8">
+                <Link 
+                    to="/san-pham-ban-chay" 
+                    className="TSP-more-btn"
+                >
+                    Xem thêm &rarr;
+                </Link>
             </div>
         </div>
-    </div>
+    </section>
+
 );
 }
-
 export default TopSellingProducts;
