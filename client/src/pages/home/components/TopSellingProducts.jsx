@@ -55,6 +55,9 @@ return (
                     </div>
                 ))}
             </div>
+            <div>
+                <span>sau nay get api tai day</span>
+            </div>
             <div className="text-center mt-8">
                 <Link 
                     to="/san-pham-ban-chay" 
