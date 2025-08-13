@@ -1,6 +1,6 @@
 .ConTaiNer-Footer {
     background-color: #2a2a2a;
-    color: #e6e6e6; 
+    color: #e6e6e6;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -9,7 +9,6 @@
     margin: 0 auto;
 }
 
-/* THÔNG TIN CÔNG TY */
 .content-company_title-company {
     font-size: 18px;
     font-weight: bold;
@@ -34,28 +33,28 @@
     color: #cccccc;
 }
 
-/* DANH MỤC */
 .categories-title,
-.service-title {
+.policy-title {
     color: #ffffff;
     font-size: 16px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.list-category ul,
-.list-service ul {
+.list-category,
+.list-policy {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .list-category li,
-.list-service li {
+.list-policy li {
     margin-bottom: 6px;
 }
 
 .list-category a,
-.list-service a {
+.list-policy a {
     text-decoration: none;
     color: #dddddd;
     font-size: 14px;
@@ -63,11 +62,14 @@
 }
 
 .list-category a:hover,
-.list-service a:hover {
+.list-policy a:hover {
     color: #b88e2f;
 }
 
-/* LOGO + MẠNG XÃ HỘI */
+.overall-Footer_policy {
+    /* padding-top: 2px; */
+}
+
 .logo-Footer img {
     max-width: 300px;
     object-fit: contain;
@@ -91,8 +93,8 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.08); 
-    border: 1px solid rgba(255, 255, 255, 0.2);  
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .item-Facebook a {
@@ -105,21 +107,21 @@
     background-color: #fff;
 }
 
-.item-Ins a {
-    color: #e1306c;
+.item-YouTube a {
+    color: #ff0000;
     background-color: #fff;
-
 }
+
 
 .item-Email a {
     color: #b88e2f;
     background-color: #fff;
-
 }
 
 .social-links_item a:hover {
     transform: scale(1.1);
 }
+
 .footer-copyright {
     text-align: center;
     padding: 16px 0;
@@ -134,67 +136,67 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-.overall-content {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 24px;
-    gap: 32px;
-}
+    .overall-content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 24px;
+        gap: 32px;
+    }
 
-.logo-Footer img {
-    width: 160px;
-    height: auto;
-}
+    .logo-Footer img {
+        width: 160px;
+        height: auto;
+    }
 
-.social-links_item {
-    gap: 18px;
-}
+    .social-links_item {
+        gap: 18px;
+    }
 
-.content-company_title-company,
-.categories-title,
-.service-title {
-    font-size: 17px;
-}
+    .content-company_title-company,
+    .categories-title,
+    .policy-title {
+        font-size: 17px;
+    }
 
-.list-category a,
-.list-service a,
-.content-company span {
-    font-size: 14px;
-}
+    .list-category a,
+    .list-policy a,
+    .content-company span {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 767px) {
-.overall-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 28px;
-    padding: 0 16px;
-    text-align: left;
-}
+    .overall-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 0 16px;
+        text-align: left;
+    }
 
-.logo-Footer img {
-    display: none;
-}
+    .logo-Footer img {
+        display: none;
+    }
 
-.social-links_item {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 12px;
-}
+    .social-links_item {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 
-.social-links_item a {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-}
+    .social-links_item a {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
 
-.content-company div {
-    font-size: 13px;
-    line-height: 1.6;
-}
+    .content-company div {
+        font-size: 13px;
+        line-height: 1.6;
+    }
 
-.footer-copyright p {
-    font-size: 12px;
-    text-align: center;
-    padding: 8px 16px;
-}
+    .footer-copyright p {
+        font-size: 12px;
+        text-align: center;
+        padding: 8px 16px;
+    }
 }

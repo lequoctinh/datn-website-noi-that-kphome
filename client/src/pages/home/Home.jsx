@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import IntroBrandValue from "./components/IntroBrandValue";
 import ProductCatalog from "./components/ProductCatalog";
 import TopSellingProducts from "./components/TopSellingProducts";
+import SmartLockPage from "./components/SmartLockPage";
 function Home() {
 return (
     <div className="Container-home">
@@ -14,6 +15,7 @@ return (
             <IntroBrandValue />
             <ProductCatalog/>
             <TopSellingProducts/>
+            <SmartLockPage/>
         </div>        
     </div>
 );
