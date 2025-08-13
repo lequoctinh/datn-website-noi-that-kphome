@@ -1,29 +1,40 @@
+:root{
+  --brand-gold: #b88e2f;
+  --brand-red:  #D72C2C;
+  --text-dark:  #222222;
+  --text-dim:   #555555;
+  --card-bg:    #ffffff;
+  --card-border: rgba(0,0,0,0.06);
+  --shadow:     0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* ===== Khung trang ===== */
 .Container-SmartLockPage {
   border: none;
-  background: #ffffff; 
+  background: #ffffff;        /* tách khỏi nền tổng thể xám nhạt */
   padding: 20px;
   max-width: 1200px;
   margin: 30px auto 0 auto;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
+/* ===== Thanh danh mục con ===== */
 .SmartLockPage-Content_Cate {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 12px; 
+  gap: 8px 12px;
 }
 
-
 .subject-pill {
-  border: 2px solid #b88e2f;
-  color: #b88e2f;
+  border: 2px solid var(--brand-gold);
+  color: var(--brand-gold);
   font-weight: 700;
-  padding: 8px 16px;    
+  padding: 8px 16px;
   border-radius: 8px;
   transition: all 0.25s ease;
-  background: rgba(184, 142, 47, 0.08); 
+  background: rgba(184,142,47,0.08);
 }
 
 .subject-pill h2 {
@@ -34,26 +45,24 @@
 
 @media (hover: hover) {
   .subject-pill:hover {
-    background-color: #b88e2f;
+    background-color: var(--brand-gold);
     color: #ffffff;
   }
 }
 
 .SmartLockPage-Content_Cate a {
   text-decoration: none;
-  color: #333333; 
+  color: #333333;
   transition: color 0.25s ease, transform 0.2s ease;
   display: block;
   padding: 8px 12px;
   border-radius: 6px;
 }
 
-.SmartLockPage-Content_Cate a:hover {
-  color: #b88e2f;
-}
+.SmartLockPage-Content_Cate a:hover { color: var(--brand-gold); }
 
 .SmartLockPage-Content_Cate a:focus-visible {
-  outline: 2px dashed #b88e2f;
+  outline: 2px dashed var(--brand-gold);
   outline-offset: 2px;
 }
 
@@ -74,40 +83,156 @@
 }
 
 .SmartLockPage-Content_Cate a:hover + .divider,
-.divider:hover {
-  color: #b88e2f;
-}
+.divider:hover { color: var(--brand-gold); }
 
-/* ====== RESPONSIVE ====== */
 @media (max-width: 639px) {
-  .SmartLockPage-Content_Cate {
-    gap: 6px 10px;
-  }
-  .divider {
-    display: none;
-  }
-  .SmartLockPage-Content_Cate h2 {
-    font-size: 14px;
-  }
-  .subject-pill {
-    padding: 6px 12px;
-  }
-  .SmartLockPage-Content_Cate a {
-    padding: 6px 10px;
-  }
+  .SmartLockPage-Content_Cate { gap: 6px 10px; }
+  .divider { display: none; }
+  .SmartLockPage-Content_Cate h2 { font-size: 14px; }
+  .subject-pill { padding: 6px 12px; }
+  .SmartLockPage-Content_Cate a { padding: 6px 10px; }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
-  .SmartLockPage-Content_Cate h2 {
-    font-size: 16px;
-  }
-  .divider {
-    display: flex;
-  }
+  .SmartLockPage-Content_Cate h2 { font-size: 16px; }
+  .divider { display: flex; }
 }
 
 @media (min-width: 1024px) {
-  .SmartLockPage-Content_Cate h2 {
-    font-size: 18px;
-  }
+  .SmartLockPage-Content_Cate h2 { font-size: 18px; }
+}
+
+
+
+.SLP-card{
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.SLP-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+  border-color: var(--brand-gold);
+}
+
+/* Ảnh */
+.SLP-thumb img{
+  width: 100%;
+  height: auto;        
+  object-fit: cover;
+  display: block;
+}
+
+/* Nội dung */
+.SLP-info{
+  padding: 12px 14px;
+}
+
+/* Tiêu đề sản phẩm */
+.SLP-title{
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-dark);
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+.SLP-title:hover{ color: var(--brand-gold); }
+
+.SLP-prices{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+.SLP-price-old{
+  color: #888;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.SLP-price{
+  color: var(--brand-red);  
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.SLP-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.SLP-compare{
+  padding: 8px 12px;
+  border: 1px solid var(--brand-gold);
+  color: var(--brand-gold);
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease;
+}
+.SLP-compare:hover{
+  background: var(--brand-gold);
+  color: #fff;
+}
+.SLP-compare:focus-visible{
+  outline: 2px dashed var(--brand-gold);
+  outline-offset: 3px;
+}
+
+.SLP-cart{
+  padding: 8px 12px;
+  background: var(--brand-gold);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter .2s ease, transform .2s ease;
+}
+.SLP-cart:hover{
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+.SLP-cart:focus-visible{
+  outline: 2px dashed var(--brand-gold);
+  outline-offset: 3px;
+}
+.SLP-moreBtn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: var(--brand-gold);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.SLP-moreBtn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.SLP-moreBtn:focus-visible{
+  outline: 2px dashed var(--brand-gold);
+  outline-offset: 3px;
+}
+
+@media (max-width: 639px){
+  .SLP-thumb img{ height: 200px; }
 }
