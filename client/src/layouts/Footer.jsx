@@ -46,7 +46,6 @@ return (
                     <li><Link to='/ve-chung-toi'>Về chúng tôi</Link></li>
                     <li><Link to='/du-an-thuc-te'>Dự án thực tế</Link></li>
                     <li><Link to='/huong-dan-su-dung'>Hướng dẫn sử dụng</Link></li>
-                    <li><Link to='/tin-tuc'>Tin tức</Link></li>
                     <li><Link to='/lien-he'>Liên hệ với chúng tôi</Link></li>
                 </ul>
             </div>
