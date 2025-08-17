@@ -26,7 +26,9 @@ return (
         {isTablet ? (
         <div className="header-navbar_top flex justify-between items-center mb-2">
             <div className="header-navbar_logo">
-            <img src="/SecureHome.png" alt="Logo" className="h-14" />
+                <Link to="/">
+                <img src="/SecureHome.png" alt="Logo" className="h-14" />
+                </Link>
             </div>
             <div className="header-navbar_item flex items-center gap-4 text-lg">
             <button
@@ -45,7 +47,9 @@ return (
         ) : (
         <>
             <div className="header-navbar_logo">
-            <img src="/SecureHome.png" alt="Logo" className="h-14" />
+            <Link to="/">
+                <img src="/SecureHome.png" alt="Logo" className="h-14" />
+            </Link>
             </div>
             <div className="header-navbar_menu">
             <ul className="list-menu flex space-x-6 items-center text-[15px] font-medium">
