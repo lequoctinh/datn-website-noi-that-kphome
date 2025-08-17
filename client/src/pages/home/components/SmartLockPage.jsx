@@ -202,12 +202,10 @@ import {faShoppingCart
                                 <Link to="/khoa-cua-huyndai" className="SLP-title">
                                     Khóa điện tử DL6000 Hafele 912.20.581
                                 </Link>
-
                                 <div className="SLP-prices">
                                     <span className="SLP-price-old">5.764.000 đ</span>
                                     <span className="SLP-price">4.300.000 đ</span>
                                 </div>
-
                                 <div className="SLP-actions">
                                     <button type="button" className="SLP-compare">So sánh</button>
                                     <button type="button" className="SLP-cart" aria-label="Thêm vào giỏ">

@@ -1,0 +1,52 @@
+import React from "react";
+import "./css/ServiceHighlights.css";
+
+const HIGHLIGHTS = [
+{
+    id: "warranty",
+    title: "Bảo hành chính hãng",
+    img: "/service/bao-hanh-chinh-hang.png",
+    alt: "Bảo hành chính hãng",
+},
+{
+    id: "cod",
+    title: "Ship COD toàn quốc",
+    img: "/service/ship-cod-toan-quoc.png",
+    alt: "Ship COD toàn quốc",
+},
+{
+    id: "exchange",
+    title: "Đổi 1-1 trong 30 ngày",
+    img: "/service/doi1-1.png",
+    alt: "Đổi 1-1 trong 30 ngày",
+},
+{
+    id: "install",
+    title: "Lắp đặt chuyên nghiệp",
+    img: "/service/lap-dat-chuyen-nghiep.png",
+    alt: "Lắp đặt chuyên nghiệp",
+},
+];
+
+function ServiceHighlights() {
+return (
+    <div className="Container-ServiceHighlights flex flex-col items-center gap-6">
+    <div className="ServiceHighlights-Content text-center">
+        <h2 className="font-bold text-xl">Ưu đãi & Cam kết dịch vụ</h2>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-5xl">
+        {HIGHLIGHTS.map((item) => (
+        <div key={item.id} className="ServiceHighlights-card">
+            <div className="thumb">
+            <img src={item.img} alt={item.alt} />
+            </div>
+            <p className="title">{item.title}</p>
+        </div>
+        ))}
+    </div>
+    </div>
+);
+}
+
+export default ServiceHighlights;
