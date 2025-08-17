@@ -16,10 +16,10 @@ function HeaderMobile() {
 const isMobile = useMediaQuery({ maxWidth: 767 });
 
 const [menuOpen, setMenuOpen] = useState(false);
-const [openDropdown1, setOpenDropdown1] = useState(false); // Khóa cửa thông minh
-const [openDropdown2, setOpenDropdown2] = useState(false); // Cửa nhựa Composite
-const [openDropdown3, setOpenDropdown3] = useState(false); // Camera giám sát
-const [openDropdown4, setOpenDropdown4] = useState(false); // Phụ kiện
+const [openDropdown1, setOpenDropdown1] = useState(false); 
+const [openDropdown2, setOpenDropdown2] = useState(false); 
+const [openDropdown3, setOpenDropdown3] = useState(false); 
+const [openDropdown4, setOpenDropdown4] = useState(false); 
 const [searchText, setSearchText] = useState("");
 
 if (!isMobile) return null;
