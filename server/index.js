@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-res.json({ message: "KPHome backend API đang hoạt động!" });
+res.json({ message: "Secure smart home backend API đang hoạt động!" });
 });
 
 app.listen(PORT, () => {

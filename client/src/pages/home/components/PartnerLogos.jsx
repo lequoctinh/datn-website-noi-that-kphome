@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/PartnerLogos.css";
+import AnimationWrapper from "./SharedEffect/AnimationWrapper";
 
 const logos = [
 { src: "/PartnerLogos/logo_ezviz.jpg", alt: "EZVIZ" },
@@ -18,19 +19,22 @@ const logos = [
 function PartnerLogos() {
 return (
     <div className="Container-PartnerLogos flex flex-col items-center gap-6">
-    <div className="PartnerLogos-Content text-center">
+    <AnimationWrapper type="fade" delay={0}>
+        <div className="PartnerLogos-Content text-center">
         <h2 className="PartnerLogos-title">Đối tác của chúng tôi</h2>
         <p className="text-dim mt-2">
             Những thương hiệu đồng hành & phân phối sản phẩm
         </p>
-    </div>
-
+        </div>
+    </AnimationWrapper>
 
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-center w-full max-w-6xl">
         {logos.map((logo, index) => (
-        <div key={index} className="PartnerLogos-card">
+        <AnimationWrapper key={index} type="zoom-in" delay={index * 100}>
+            <div className="PartnerLogos-card">
             <img src={logo.src} alt={logo.alt} loading="lazy" />
-        </div>
+            </div>
+        </AnimationWrapper>
         ))}
     </div>
     </div>
