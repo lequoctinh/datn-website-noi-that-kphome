@@ -1,0 +1,130 @@
+:root {
+--brand-gold:#b88e2f;
+--text-dark:#222;
+--text-dim:#555;
+--card-border:rgba(0,0,0,.18);
+}
+
+.Container-ProductSmartLock {
+background:#fff;
+}
+
+/* ===== Banner full width ===== */
+.ProductSmartLock-BannerPage {
+width: 100%;
+}
+.ProductSmartLock-BannerPage img {
+width: 100%;
+height: 300px;
+display: block;
+object-fit: cover;   /* cover: lấp đầy khung, crop ảnh */
+}
+
+/* ===== Breadcrumb ===== */
+.ProductSmartLock-Content,
+.ProductSmartLock-cate-wrapper {
+max-width:1200px;
+margin:0 auto;
+}
+
+.PSL-crumb {
+color:var(--text-dim);
+text-decoration:none;
+font-weight:600;
+transition:color .2s;
+}
+.PSL-crumb:hover { color:var(--brand-gold); }
+.PSL-crumb-active { color:var(--brand-gold); }
+
+.PSL-sep { color:#999; font-size:12px; }
+@media(min-width:640px){ .PSL-sep{ font-size:14px; } }
+
+.ProductSmartLock-cate-wrapper {
+padding:0 20px;
+margin-top:24px;     
+margin-bottom:24px;  
+}
+
+.ProductSmartLock-cate {
+display:flex;
+gap:24px;
+overflow-x:auto;
+padding:16px 0 20px;
+-webkit-overflow-scrolling:touch;
+scroll-snap-type:x proximity;
+}
+
+.ProductSmartLock-cate::-webkit-scrollbar { height:6px; }
+.ProductSmartLock-cate::-webkit-scrollbar-thumb {
+background:rgba(0,0,0,.15);
+border-radius:999px;
+}
+@supports (scrollbar-width: thin) {
+.ProductSmartLock-cate { scrollbar-width:thin; }
+}
+
+.PSL-logoItem {
+flex:0 0 150px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:flex-start;
+text-align:center;
+text-decoration:none;
+color:var(--text-dark);
+}
+
+.PSL-logoBox {
+width:112px;
+height:112px;
+border:1px solid var(--card-border);
+border-radius:50%;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:border-color .2s, box-shadow .2s, transform .15s;
+}
+.PSL-logoBox img {
+max-width:72%;
+max-height:72%;
+object-fit:contain;
+display:block;
+}
+
+.PSL-logoTitle {
+margin-top:12px;
+font-size:16px;
+font-weight:700;
+line-height:1.25;
+color:var(--text-dim);
+white-space:nowrap;
+}
+
+.PSL-logoItem:hover .PSL-logoBox {
+border-color:var(--brand-gold);
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+transform:translateY(-1px);
+}
+.PSL-logoItem:hover .PSL-logoTitle {
+color:var(--brand-gold);
+}
+
+/* ===== Responsive ===== */
+@media (max-width:639px) {
+.ProductSmartLock-cate { gap:16px; padding:12px 0 6px; }
+.PSL-logoItem { flex-basis:120px; }
+.PSL-logoBox { width:88px; height:88px; }
+.PSL-logoTitle { font-size:14px; margin-top:10px; }
+.ProductSmartLock-BannerPage img { height:180px; } 
+.ProductSmartLock-cate-wrapper { margin-top:16px; margin-bottom:16px; }
+}
+
+@media (min-width:640px) and (max-width:1023px) {
+.ProductSmartLock-cate { gap:20px; }
+.PSL-logoItem { flex-basis:136px; }
+.PSL-logoBox { width:102px; height:102px; }
+.PSL-logoTitle { font-size:15px; }
+.ProductSmartLock-BannerPage img { height:240px; }
+.ProductSmartLock-cate-wrapper { margin-top:20px; margin-bottom:20px; }
+}
