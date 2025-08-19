@@ -1,6 +1,9 @@
 import React from "react";
 import "./css/PartnerLogos.css";
 import AnimationWrapper from "./SharedEffect/AnimationWrapper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const logos = [
 { src: "/PartnerLogos/logo_ezviz.jpg", alt: "EZVIZ" },
@@ -14,6 +17,7 @@ const logos = [
 { src: "/PartnerLogos/logo_kaadas.jpg", alt: "Kaadas" },
 { src: "/PartnerLogos/logo_pimadoor.png", alt: "Pimadoor" },
 { src: "/PartnerLogos/logo_tapo.jpg", alt: "Tapo" },
+{ src: "/PartnerLogos/logo_kassler.jpg", alt: "Kassler" },
 ];
 
 function PartnerLogos() {
@@ -28,15 +32,29 @@ return (
         </div>
     </AnimationWrapper>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-center w-full max-w-6xl">
+    <Swiper
+        modules={[Autoplay]}
+        spaceBetween={20}
+        slidesPerView={2}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        breakpoints={{
+        640: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        1024: { slidesPerView: 6 },
+        }}
+        loop={true}
+        className="w-full max-w-6xl"
+    >
         {logos.map((logo, index) => (
-        <AnimationWrapper key={index} type="zoom-in" delay={index * 100}>
+        <SwiperSlide key={index}>
+            <AnimationWrapper type="zoom-in" delay={index * 100}>
             <div className="PartnerLogos-card">
-            <img src={logo.src} alt={logo.alt} loading="lazy" />
+                <img src={logo.src} alt={logo.alt} loading="lazy" />
             </div>
-        </AnimationWrapper>
+            </AnimationWrapper>
+        </SwiperSlide>
         ))}
-    </div>
+    </Swiper>
     </div>
 );
 }

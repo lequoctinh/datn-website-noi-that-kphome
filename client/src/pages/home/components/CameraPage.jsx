@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import "./css/SmartLockPage.css"; // tái dùng style thẻ card
+import "./css/SmartLockPage.css";
 import AnimationWrapper from "./SharedEffect/AnimationWrapper";
 
 const products = [
@@ -98,7 +98,8 @@ return (
         </div>
         </AnimationWrapper>
 
-        <div className="SmartLockPage-Content_Products grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-6">
+        <div className="SmartLockPage-Content_Products grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6">
+
         {products.map((p, i) => (
             <AnimationWrapper key={p.title} type="fade-up" delay={i * 120}>
             <div className="SLP-card">

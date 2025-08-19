@@ -124,6 +124,7 @@ const renderMenu = () => (
         <li><Link to="/khoa-cua-hubert">Khóa cửa HUBERT</Link></li>
         <li><Link to="/khoa-cua-ezviz">Khóa cửa EZVIZ</Link></li>
         <li><Link to="/khoa-cua-kassler">Khóa cửa KASSLER</Link></li>
+        <li><Link to="/khoa-cua-kaadas">Khóa cửa KAADAS</Link></li>
     </ul>
     </li>
     <li className="relative group">

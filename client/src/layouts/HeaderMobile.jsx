@@ -90,6 +90,8 @@ return (
                     <li><Link to="/khoa-cua-hubert" onClick={closeAll}>Khóa cửa HUBERT</Link></li>
                     <li><Link to="/khoa-cua-ezviz" onClick={closeAll}>Khóa cửa EZVIZ</Link></li>
                     <li><Link to="/khoa-cua-kassler" onClick={closeAll}>Khóa cửa KASSLER</Link></li>
+                    <li><Link to="/khoa-cua-kaadas"onClick={closeAll}>Khóa cửa KAADAS</Link></li>
+                    
                     </ul>
                 )}
             </li>
