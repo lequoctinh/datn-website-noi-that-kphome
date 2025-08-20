@@ -13,7 +13,7 @@ const logos = [
 { title: "Khóa cửa Kaadas", src: "/PartnerLogos/logo_kaadas.jpg", alt: "Kaadas", link: "/kaadas" },
 { title: "Khóa cửa Kassler", src: "/PartnerLogos/logo_kassler.jpg", alt: "Kassler", link: "/kassler" },
 ];
-
+    
 function ProductSmartLock() {
 return (
     <div className="Container-ProductSmartLock">
