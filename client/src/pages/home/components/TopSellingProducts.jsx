@@ -8,28 +8,28 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 // dữ liệu sản phẩm chọn từ SmartLockPage
 const topSmartLocks = [
 {
-    img: "/smartlock/boshms01.jpg",
+    img: "/homepage/smartlock/boshms01.jpg",
     title: "Khóa cửa điện tử Bosch FU6 Plus",
     price: "9.300.000 đ",
     old: "14.500.900 đ",
     to: "/khoa-cua-huyndai",
 },
 {
-    img: "/smartlock/huyndaims02.png",
+    img: "/homepage/smartlock/huyndaims02.png",
     title: "Khóa cửa gỗ điện tử Hyundai HY-SLA808F BLACK",
     price: "8.490.000 đ",
     old: "9.990.000 đ",
     to: "/khoa-cua-huyndai",
 },
 {
-    img: "/smartlock/hafelems02.png",
+    img: "/homepage/smartlock/hafelems02.png",
     title: "Khóa điện tử DL6000 Hafele 912.20.581",
     price: "4.300.000 đ",
     old: "5.764.000 đ",
     to: "/khoa-cua-huyndai",
 },
 {
-    img: "/smartlock/boshms04.jpg",
+    img: "/homepage/smartlock/boshms04.jpg",
     title: "Khóa cửa điện tử BOSCH FU8 PLUS",
     price: "10.100.000 đ",
     old: "16.500.900 đ",
@@ -42,26 +42,26 @@ const items = [
     to: "/khuyen-mai",
     title: "Sản phẩm giá sốc",
     subtitle: "Giá luôn rẻ nhất",
-    icon: "/collection/flame.png",
+    icon: "/homepage/collection/flame.png",
     emphasis: true,
 },
 {
     to: "/camera",
     title: "Camera ưu đãi",
     subtitle: "Chuẩn hàng chính hãng",
-    icon: "/collection/cctv.png",
+    icon: "/homepage/collection/cctv.png",
 },
 {
     to: "/khoa-thong-minh",
     title: "Khóa vân tay giảm sốc",
     subtitle: "TOP 1 bán chạy 2025",
-    icon: "/collection/knob.png",
+    icon: "/homepage/collection/knob.png",
 },
 {
     to: "/cua-nhua-composite",
     title: "Cửa nẹp kim loại",
     subtitle: "Bền - đẹp - chống nước",
-    icon: "/collection/open-door.png",
+    icon: "/homepage/collection/open-door.png",
 },
 ];
 

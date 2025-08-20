@@ -7,25 +7,25 @@ function ProductCatalog() {
 const cards = [
     {
     to: "/khoa-cua-thong-minh",
-    img: "/categories/smart-door.png",
+    img: "/homepage/categories/smart-door.png",
     alt: "Khóa cửa thông minh",
     title: "Khóa cửa thông minh",
     },
     {
     to: "/cua-nhua-composite",
-    img: "/categories/door.png",
+    img: "/homepage/categories/door.png",
     alt: "Cửa nhựa composite",
     title: "Cửa nhựa composite",
     },
     {
     to: "/camera-giam-sat",
-    img: "/categories/cctv.png",
+    img: "/homepage/categories/cctv.png",
     alt: "Camera giám sát",
     title: "Camera giám sát",
     },
     {
     to: "/phu-kien",
-    img: "/categories/setting.png",
+    img: "/homepage/categories/setting.png",
     alt: "Phụ kiện",
     title: "Phụ kiện",
     },

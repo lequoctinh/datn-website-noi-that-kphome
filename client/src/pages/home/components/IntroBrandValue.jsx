@@ -42,7 +42,7 @@ return (
 
         <div className="IntroBrandValue-content_image w-full" data-aos="zoom-in">
         <img
-            src="/IntroBrandValue/IntroBrandValue.jpg"
+            src="/homepage/IntroBrandValue/IntroBrandValue.jpg"
             alt="Giải pháp nhà thông minh Secure Smart Home"
             className="w-full h-auto object-cover rounded-lg shadow-md"
             loading="lazy"
