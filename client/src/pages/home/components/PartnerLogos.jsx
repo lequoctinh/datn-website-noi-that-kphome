@@ -6,18 +6,18 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const logos = [
-{ src: "/PartnerLogos/logo_ezviz.jpg", alt: "EZVIZ" },
-{ src: "/PartnerLogos/logo_hikvision.jpg", alt: "Hikvision" },
-{ src: "/PartnerLogos/logo_bosh.jpg", alt: "Bosch" },
-{ src: "/PartnerLogos/logo_dahua.jpg", alt: "Dahua" },
-{ src: "/PartnerLogos/logo_hafele.jpg", alt: "Hafele" },
-{ src: "/PartnerLogos/logo_hubert.jpg", alt: "Hubert" },
-{ src: "/PartnerLogos/logo_hyundai.png", alt: "Hyundai" },
-{ src: "/PartnerLogos/logo_imou.png", alt: "Imou" },
-{ src: "/PartnerLogos/logo_kaadas.jpg", alt: "Kaadas" },
-{ src: "/PartnerLogos/logo_pimadoor.png", alt: "Pimadoor" },
-{ src: "/PartnerLogos/logo_tapo.jpg", alt: "Tapo" },
-{ src: "/PartnerLogos/logo_kassler.jpg", alt: "Kassler" },
+{ src: "/homepage/PartnerLogos/logo_ezviz.jpg", alt: "EZVIZ" },
+{ src: "/homepage/PartnerLogos/logo_hikvision.jpg", alt: "Hikvision" },
+{ src: "/homepage/PartnerLogos/logo_bosh.jpg", alt: "Bosch" },
+{ src: "/homepage/PartnerLogos/logo_dahua.jpg", alt: "Dahua" },
+{ src: "/homepage/PartnerLogos/logo_hafele.jpg", alt: "Hafele" },
+{ src: "/homepage/PartnerLogos/logo_hubert.jpg", alt: "Hubert" },
+{ src: "/homepage/PartnerLogos/logo_hyundai.png", alt: "Hyundai" },
+{ src: "/homepage/PartnerLogos/logo_imou.png", alt: "Imou" },
+{ src: "/homepage/PartnerLogos/logo_kaadas.jpg", alt: "Kaadas" },
+{ src: "/homepage/PartnerLogos/logo_pimadoor.png", alt: "Pimadoor" },
+{ src: "/homepage/PartnerLogos/logo_tapo.jpg", alt: "Tapo" },
+{ src: "/homepage/PartnerLogos/logo_kassler.jpg", alt: "Kassler" },
 ];
 
 function PartnerLogos() {

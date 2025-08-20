@@ -3,10 +3,10 @@ import "./css/ServiceHighlights.css";
 import AnimationWrapper from "./SharedEffect/AnimationWrapper";
 
 const HIGHLIGHTS = [
-{ id: "warranty", title: "Bảo hành chính hãng", img: "/service/bao-hanh-chinh-hang.png", alt: "Bảo hành chính hãng" },
-{ id: "cod",     title: "Ship COD toàn quốc",  img: "/service/ship-cod-toan-quoc.png",  alt: "Ship COD toàn quốc" },
-{ id: "exchange",title: "Đổi 1-1 trong 30 ngày", img: "/service/doi1-1.png",            alt: "Đổi 1-1 trong 30 ngày" },
-{ id: "install", title: "Lắp đặt chuyên nghiệp", img: "/service/lap-dat-chuyen-nghiep.png", alt: "Lắp đặt chuyên nghiệp" },
+{ id: "warranty", title: "Bảo hành chính hãng", img: "/homepage/service/bao-hanh-chinh-hang.png", alt: "Bảo hành chính hãng" },
+{ id: "cod",     title: "Ship COD toàn quốc",  img: "/homepage/service/ship-cod-toan-quoc.png",  alt: "Ship COD toàn quốc" },
+{ id: "exchange",title: "Đổi 1-1 trong 30 ngày", img: "/homepage/service/doi1-1.png",            alt: "Đổi 1-1 trong 30 ngày" },
+{ id: "install", title: "Lắp đặt chuyên nghiệp", img: "/homepage/service/lap-dat-chuyen-nghiep.png", alt: "Lắp đặt chuyên nghiệp" },
 ];
 
 function ServiceHighlights() {
