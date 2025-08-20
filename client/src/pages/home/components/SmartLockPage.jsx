@@ -97,12 +97,7 @@ return (
             </div>
         </div>
         </AnimationWrapper>
-        <div className="SmartLockPage-Content_Products 
-                grid grid-cols-2 
-                sm:grid-cols-2 
-                md:grid-cols-3 
-                lg:grid-cols-4 
-                gap-5 mt-6">
+        <div className="SmartLockPage-Content_Products grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6">
 
         {products.map((p, i) => (
             <AnimationWrapper key={p.title} type="fade-up" delay={i * 120}>
