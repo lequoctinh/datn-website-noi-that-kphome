@@ -7,37 +7,37 @@ import AnimationWrapper from "./SharedEffect/AnimationWrapper";
 
 const accessories = [
 {
-    img: "/accessories/module-01.png",
+    img: "/homepage/accessories/module-01.png",
     title: "SOLITY SENDER – Module kết nối chuông của màn hình",
     to: "/solity-sender-module-ket-noi-chuong-man-hinh",
     price: "1.100.000 đ",
 },
 {
-    img: "/accessories/module-02.png",
+    img: "/homepage/accessories/module-02.png",
     title: "SOLITY RECEIVER MODULE RX-710",
     to: "/solity-receiver-module-rx-710",
     price: "700.000 đ",
 },
 {
-    img: "/accessories/module-03.png",
+    img: "/homepage/accessories/module-03.png",
     title: "SOLITY BLUETOOTH MODULE BL-100",
     to: "/solity-bluetooth-module-bl-100",
     price: "1.000.000 đ",
 },
 {
-    img: "/accessories/the-nho-dahua.png",
+    img: "/homepage/accessories/the-nho-dahua.png",
     title: "Thẻ nhớ Dahua 64GB",
     to: "/the-nho-dahua-64gb",
     price: "200.000 đ",
 },
 {
-    img: "/accessories/the-nho-imou.png",
+    img: "/homepage/accessories/the-nho-imou.png",
     title: "Thẻ nhớ Imou 64GB",
     to: "/the-nho-imou-64gb",
     price: "200.000 đ",
 },
 {
-    img: "/accessories/hop-y-noc.png",
+    img: "/homepage/accessories/hop-y-noc.png",
     title: "Hộp INOX bảo vệ khóa điện tử",
     to: "/hop-inox-bao-ve-khoa-dien-tu",
     price: "300.000 đ",

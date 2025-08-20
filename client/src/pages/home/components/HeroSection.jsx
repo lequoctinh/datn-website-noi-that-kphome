@@ -7,17 +7,17 @@ import "./css/HeroSection.css";
 
 function HeroSection() {
 const bannerImages = [
-    "/BannerHome/LA_0001.JPG",
-    "/BannerHome/LA_0002.JPG",
-    "/BannerHome/LA_0003.jpg",
-    "/BannerHome/LA_0004.jpg",
-    "/BannerHome/LA_0005.jpg",
+    "/homepage/BannerHome/LA_0001.JPG",
+    "/homepage/BannerHome/LA_0002.JPG",
+    "/homepage/BannerHome/LA_0003.JPG",
+    "/homepage/BannerHome/LA_0004.JPG",
+    "/homepage/BannerHome/LA_0005.JPG",
 ];
 
 return (
     <div className="Container-HeroSection">
         <div className="HeroSection-banner_background">
-            <img src="/background-banner/background-banner.jpg" alt="" />
+            <img src="/homepage/background-banner/background-banner.jpg" alt="" />
         </div>
         <div className="HeroSection-banner_slider">
             <Swiper
