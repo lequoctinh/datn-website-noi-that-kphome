@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import ProductSmartLock from "./pages/products/ProductSmartLock";
 import BrandAll from "./pages/products/BrandAll";
-
+import Contact from "./pages/contact/Contact";
 function App() {
   return (
     <Layout>
@@ -14,6 +14,7 @@ function App() {
         <Route path="/ve-chung-toi" element={<About />} />
         <Route path="/khoa-cua-thong-minh" element={<ProductSmartLock/>} />
         <Route path="/thuong-hieu/:slug" element={<BrandAll />} />
+        <Route path="/lien-he" element={<Contact/>} />
       </Routes>
     </Layout>
   );  
