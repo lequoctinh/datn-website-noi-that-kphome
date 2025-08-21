@@ -84,7 +84,7 @@ return (
                 </div>
                 {openDropdown1 && (
                     <ul className="dropdown-submenu mt-2 pl-3 space-y-1">
-                    <li><Link to="/khoa-van-tay-bosh" onClick={closeAll}>Khóa vân tay BOSH</Link></li>
+                    <li><Link to="/khoa-van-tay-bosch" onClick={closeAll}>Khóa vân tay BOSCH</Link></li>
                     <li><Link to="/khoa-cua-huyndai" onClick={closeAll}>Khóa cửa HUYNDAI</Link></li>
                     <li><Link to="/khoa-cua-hafele" onClick={closeAll}>Khóa cửa HAFELE</Link></li>
                     <li><Link to="/khoa-cua-hubert" onClick={closeAll}>Khóa cửa HUBERT</Link></li>

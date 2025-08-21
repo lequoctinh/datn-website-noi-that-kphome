@@ -118,7 +118,7 @@ const renderMenu = () => (
     <li className="relative group">
     <Link to="#">Khóa cửa thông minh <FontAwesomeIcon icon={faAngleDown} /></Link>
     <ul className="list-menu_secure absolute hidden group-hover:block">
-        <li><Link to="/khoa-van-tay-bosh">Khóa vân tay BOSH</Link></li>
+        <li><Link to="/khoa-van-tay-bosch">Khóa vân tay BOSCH</Link></li>
         <li><Link to="/khoa-cua-huyndai">Khóa cửa HUYNDAI</Link></li>
         <li><Link to="/khoa-cua-hafele">Khóa cửa HAFELE</Link></li>
         <li><Link to="/khoa-cua-hubert">Khóa cửa HUBERT</Link></li>
